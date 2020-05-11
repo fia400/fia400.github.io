@@ -1,80 +1,55 @@
-<!doctype html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Sandy Lucev Bio</title>
-    </head>
-        
-    <body>
-        <H1>Student Bio</H1>
-        <p></p>
-        <H2>Sandy Lucev</H2>
-<br>
-        <img src="Sandy.png" width="200" height="200">
+<!DOCTYPE html>
+<html lang="en">
 
-    <br>
-    <p>
-    <body>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</body>
-    </p>
-<br>
-<br>
-    <h2>Contact Info</h2>    
-    <ul>
-        <li> <strong>Email:</strong> <a href="#"><fia400@gmail.com></a></li>
-        <li> <strong>GitHub:</strong> Fia400</li>
-        <li> <strong>Portfolio:</strong> Link to Portfolio</li>
-     </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
-    </body>
+<body>
 
-<h3>About Sandy</h3>
-<p></p>
-<p></p>
-        <head>
-        <style>
-            table {
-            border-collapse: collapse;
-            }
-            table, td, th {
-            border: 1px solid black;
-}
-        </style>
-        </head>
-        <body>
-        
-        <table>
-          <tr>
-            <th>Languages Spoken</th>
-            <th>Pet Names</th>
-            <th>Pet Type</th>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Frankie</td>
-            <td>Dog</td>
-          </tr>
-          <tr>
-            <td>Croatian</td>
-            <td>Pepper</td>
-            <td>Dog</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Tupac</td>
-            <td>Turtle</td>
-             </tr>
-             <tr>
-             <td></td>
-             <td>Biggie</td>
-             <td>Turtle</td>
-            </tr>
-        </table>
-        
-        </body>
-  <h3>Some Helpful Links</h3>
-  <ul>
-    <li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a></li>
-    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/bonus.js"></script>
+
+</body>
+
 </html>
